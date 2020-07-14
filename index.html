@@ -32,48 +32,7 @@
 
 <body>
 
-    <header id="header" id="home">
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-6 col-4 header-top-left no-padding">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-8 header-top-right no-padding">
-                        <a href="tel:+0905286027">+0905286027</a>
-                        <a href="mailto:dnt.doanngocthanh@gmail.com">dnt.doanngocthanh@gmail.com</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container main-menu">
-            <div class="row align-items-center justify-content-between d-flex">
-                <div id="logo">
-                    <a class="navbar-brand" href="/" style="text-decoration: none;"> <b style="color: orange;">๖ۣۜDanIT</b><b style="color: blue;">47</b></a>
-                </div>
-                <nav id="nav-menu-container">
-                    <ul class="nav-menu">
-                        <li class="menu-active"><a href="/">Trang Chủ</a></li>
-                        <li><a href="about.hbs">Giới Thiệu</a></li>
-                        <li><a href="services.hbs">Dịch Vụ</a></li>
-                        <li><a href="jobs-home">Việc Làm</a></li>
-                        <li class="menu-has-children"><a href="">Bài Viết</a>
-                            <ul>
-                                <li><a href="blog-home.hbs">Blog Home</a></li>
-                                <li><a href="blog-single.hbs">Blog Single</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </nav>
-                <!-- #nav-menu-container -->
-            </div>
-        </div>
-    </header>
-    <!-- #header -->
+    <div include="header.html"></div>
 
     <!-- start banner Area -->
     <section class="banner-area" id="home">
@@ -240,7 +199,7 @@
 
 
     <!-- Start blog Area -->
-    {{!--
+
     <section class="blog-area section-gap" id="blog">
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -310,7 +269,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!-- End blog Area -->
 
     <!-- Start brands Area -->
@@ -355,7 +314,7 @@
                     return false;
                 }
                 httpRequest.onreadystatechange = alertContents;
-                httpRequest.open('GET', 'http://jsondataapi.000webhostapp.com/api/account');
+                httpRequest.open('GET', 'https://jsondataapi.000webhostapp.com/api/account');
                 httpRequest.send();
             }
 
@@ -370,7 +329,7 @@
             }
         })();
     </script>
-
+    <div include="footer.html"></div>
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
