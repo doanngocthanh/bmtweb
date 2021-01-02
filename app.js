@@ -9,11 +9,11 @@ sampleApp.config(['$routeProvider','$locationProvider',
       
     $routeProvider.
       when('/AddNewOrder', {
-	templateUrl: 'test/templates/add_order.html',
+	templateUrl: 'bmtweb/templates/add_order.html',
 	controller: 'AddOrderController'
       }).
       when('/ShowOrders', {
-	templateUrl: 'test/templates/show_orders.html',
+	templateUrl: 'bmtweb/templates/show_orders.html',
 	controller: 'ShowOrdersController'
       }).
       otherwise({
