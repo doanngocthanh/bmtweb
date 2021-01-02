@@ -1,6 +1,5 @@
 function config($stateProvider, $urlRouterProvider,$locationProvider) {
     $locationProvider.hashPrefix('');
-    $urlRouterProvider.hashPrefix('');
     $urlRouterProvider.otherwise('/home');
     
     $stateProvider
